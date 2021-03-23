@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Info</title>
+  </head>
+  <body>
+    <h1>Students Information</h1>
+    {% if students %}
+     <table>
+       <thead>
+         <th>Enr No.</th>
+         <th>Student Name</th>
+         <th>Course Code</th>
+         <th>Student Address</th>
+       </thead>
+       {% for stu in students %}
+       <tr>
+         <td>{{stu.enr_no}}</td>
+         <td>{{stu.stu_name}}</td>
+         <td>{{stu.course_code}}</td>
+         <td>{{stu.stu_addr}}</td>
+       </tr>
+       {% endfor %}
+    </table>
+    {% else %}
+    <p>no students Record Found</p>
+    {% endif %}
+  </body>
+</html>

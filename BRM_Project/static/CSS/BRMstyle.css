@@ -1,0 +1,83 @@
+body{
+  background-color: pink;
+  background-image: url('../images/ggg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  font-family:"fantasy";
+}
+#header{
+  background-color: blue;
+  background-image: url('../images/p.jpg');
+  padding-bottom: 30px;
+  padding-top: 40px;
+  text-align: center;
+}
+#header h1{
+text-align: center;
+color:#0000FF;
+letter-spacing:3px;
+text-decoration:underline;
+background-color: #00ffff;
+width: 600px;
+border: solid 3px #000000;
+margin-left: 350px;
+}
+#nav{
+  width: 60%;
+  margin: auto;
+}
+#Hello{
+  text-align: right;
+  margin-right: 50px;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px red;
+}
+#nav a{
+  background-color: #00FF00;
+  width: 150px;
+  border: solid 2px #FF0000;
+  font-size: 20px;
+  text-decoration: none;
+  color: #800080;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#main{
+  margin:auto;
+  border: solid 1px lightgray;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+#main form,#main h2{
+  text-align:center;
+  color: #ffffff;
+  background-color: red;
+  width: 350px;
+  border: solid 1px lightgray;
+  text-align: center;
+  margin-left: 500px;
+}
+#main table{
+  width: 98%;
+  text-align: left;
+  color:yellow;
+  font-size: 22px;
+}
+#main table th{
+  background-color: red;
+  text-align:left;
+  color: white;
+}
+.btn{
+  background-color: #0000FF;
+  width: 150px;
+  border:solid 2px #00FF00;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}

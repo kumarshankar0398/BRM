@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Book Form</title>
+    <link rel="stylesheet" href="{% static 'CSS/BRMstyle.css' %}">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Book Record Management System</h1>
+      <div id="nav">
+        <a href="/BRMApp/view-books">View All</a>
+        <a href="/BRMApp/new-books">Add New</a>
+        <a href="/BRMApp/search-books">Search</a>
+        <a href="/BRMApp/logout">Logout</a>
+      </div>
+    </div>
+    <div id="Hello">
+      <h2>Hello,{{request.session.username}}</h2>
+    </div>
+    <div id="main">
+      <h2>Add New Book Record</h2>
+      <form action="/BRMApp/add" method="post">
+        <table>
+          <tr>
+           {% csrf_token %}
+           {{form}}
+           <td></td>
+        <td><input id="btn1" type="submit" value="Submitt"></td>
+        </tr>
+      </table>
+      </form>
+    </div>
+  </body>
+</html>
